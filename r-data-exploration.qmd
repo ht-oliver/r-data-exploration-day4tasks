@@ -19,7 +19,21 @@ skimr::skim(diamonds)
 
 Create pairs plot
 ```{r}
-GGally::ggpairs(diamonds)
+#GGally::ggpairs(diamonds)
 ```
+```{r}
+ggplot(data = diamonds, aes(x = carat, y = price)) +
+  geom_point()
+```
+```{r}
+ggplot(data = diamonds, aes(x = carat)) +
+  geom_histogram()
+```
+```{r}
+ggplot(data = diamonds, aes(x=clarity, y=price)) +
+  geom_boxplot()
+```
+
+
 
 
